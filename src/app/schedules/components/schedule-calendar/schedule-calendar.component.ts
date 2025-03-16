@@ -103,23 +103,36 @@ export class ScheduleCalendarComponent implements OnDestroy, AfterViewInit, OnCh
   }
 
   onSubmit(form: NgForm) {
-    const startAt = new Date(this._selected)
-    const endAt = new Date(this._selected)
-    startAt.setHours(this.newSchedule.startAt!.getHours(), this.newSchedule.startAt!.getMinutes())
-    endAt.setHours(this.newSchedule.endAt!.getHours(), this.newSchedule.endAt!.getMinutes())
+    if (!this.newSchedule.startAt || !this.newSchedule.endAt || !this.newSchedule.clientId) {
+      alert('Por favor, preencha todos os campos');
+      return;
+    }
+
+    const startAt = new Date(this._selected);
+    const endAt = new Date(this._selected);
+    startAt.setHours(this.newSchedule.startAt.getHours(), this.newSchedule.startAt.getMinutes());
+    endAt.setHours(this.newSchedule.endAt.getHours(), this.newSchedule.endAt.getMinutes());
+
+    // Verifica sobreposições
+    if (this.isOverlapping(startAt, endAt)) {
+      alert('Este horário já está reservado. Por favor, escolha outro horário.');
+      return;
+    }
+
     const saved: ClientScheduleAppointmentModel = {
       id: -1,
       day: this._selected.getDate(),
       startAt,
       endAt,
-      clientId: this.newSchedule.clientId!,
-      clientName: this.clients.find(c => c.id === this.newSchedule.clientId!)!.name
-    }
-    this.monthSchedule.scheduledAppointments.push(saved)
-    this.onScheduleClient.emit(saved)
-    this.buildTable()
-    form.resetForm()
-    this.newSchedule = { startAt: undefined, endAt: undefined, clientId: undefined }
+      clientId: this.newSchedule.clientId,
+      clientName: this.clients.find(c => c.id === this.newSchedule.clientId)!.name
+    };
+    
+    this.monthSchedule.scheduledAppointments.push(saved);
+    this.onScheduleClient.emit(saved);
+    this.buildTable();
+    form.resetForm();
+    this.newSchedule = { startAt: undefined, endAt: undefined, clientId: undefined };
   }
 
   requestDelete(schedule: ClientScheduleAppointmentModel) {
@@ -139,9 +152,29 @@ export class ScheduleCalendarComponent implements OnDestroy, AfterViewInit, OnCh
   }
 
   onTimeChange(time: Date) {
-    const endAt = new Date(time)
-    endAt.setHours(time.getHours() + 1)
-    this.newSchedule.endAt = endAt
+    if (time) {
+      const endAt = new Date(time);
+      endAt.setHours(time.getHours() + 1);
+      this.newSchedule.endAt = endAt;
+    } else {
+      // Se o tempo for nulo, limpa o horário de término
+      this.newSchedule.endAt = undefined;
+    }
+  }
+
+  private isOverlapping(startTime: Date, endTime: Date): boolean {
+    return this.monthSchedule.scheduledAppointments.some(appointment => {
+      if (appointment.day !== this._selected.getDate()) return false;
+      
+      const appointmentStart = new Date(appointment.startAt);
+      const appointmentEnd = new Date(appointment.endAt);
+      
+      return (
+        (startTime >= appointmentStart && startTime < appointmentEnd) ||
+        (endTime > appointmentStart && endTime <= appointmentEnd) ||
+        (startTime <= appointmentStart && endTime >= appointmentEnd)
+      );
+    });
   }
 
   private buildTable() {
@@ -155,5 +188,4 @@ export class ScheduleCalendarComponent implements OnDestroy, AfterViewInit, OnCh
       this.dataSource.paginator = this.paginator
     }
   }
-
 }
