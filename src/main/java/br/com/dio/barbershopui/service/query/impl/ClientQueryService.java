@@ -40,7 +40,7 @@ public class ClientQueryService implements IClientQueryService {
     @Override
     public void verifyPhone(final long id, final String phone) {
         var optional = repository.findByPhone(phone);
-        if (optional.isPresent() && !Objects.equals(optional.get().getPhone(), phone)) {
+        if (optional.isPresent() && !Objects.equals(optional.get().getId(), id)) {
             var message = "O telefone " + phone + " já está em uso";
             throw new PhoneInUseException(message);
         }
@@ -57,7 +57,7 @@ public class ClientQueryService implements IClientQueryService {
     @Override
     public void verifyEmail(final long id, final String email) {
         var optional = repository.findByEmail(email);
-        if (optional.isPresent() && !Objects.equals(optional.get().getPhone(), email)) {
+        if (optional.isPresent() && !Objects.equals(optional.get().getId(), id)) {
             var message = "O e-mail " + email + " já está em uso";
             throw new PhoneInUseException(message);
         }
