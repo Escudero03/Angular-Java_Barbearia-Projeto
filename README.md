@@ -7,6 +7,7 @@
       width="100px" 
     />
     <h1>barber-shop-ui</h1>
+    <h1>barber-shop-api</h1>
   </p>
 </div>
 <!--END_SECTION:header-->
@@ -62,6 +63,7 @@
 ## 💻 Sobre o Projeto
 
 Vamos criar um projeto Angular para agendamento de atendimento em uma barbearia, vamos usar a lib do Material e assim explorar alguns conceitos do framework Angular
+Vamos criar um projeto Java com Spring para agendamento de atendimento em uma barbearia, vamos usar JPA com Hibernate para salvar os dados no PostgresSQL, gerenciar migrations do banco de Dados com Flyway
 
 ## 📚 Pré-requisitos de Habilidades e Níveis de Conhecimento
 
@@ -71,6 +73,10 @@ Antes de ingressar neste conteúdo, é necessário possuir conhecimento prévio 
   - Typescript | Intermediário
   - HTML | Intermediário
   - CSS | Intermediário
+  - Java | Intermediário
+  - SQL | Intermediário
+  - Gradle | Básico
+  - Spring | Básico
   - Docker | Básico (opcional)
   - Docker Compose | Básico (opcional)
 
@@ -80,6 +86,11 @@ Antes de ingressar neste conteúdo, é necessário possuir conhecimento prévio 
     - Consumo de Api Rest
     - Comunicação com backend
     - Componentização
+  - Backend
+    - Trabalhar de forma correta com os verbos HTTP
+    - Comunicação com backend
+    - Versionamento de base de dados
+    - Gerenciar comunicação com banco de dados usando JPA com Hibernate
 
 ## 🎯 Objetivos e Resultados Esperados
 
@@ -88,6 +99,8 @@ Após a conclusão do curso/projeto, os estudantes estarão aptos a:
 - Criar um projeto Angular.
 - Consumir API Rest.
 - Componentizar para reaproveitar e organizar o projeto
+- Criar um projeto Java com Spring.
+- Criar uma API REST com boas práticas
 
 <!--START_SECTION:footer-->
 
