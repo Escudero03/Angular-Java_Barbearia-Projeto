@@ -1,16 +1,14 @@
 # Sistema de Gerenciamento de Barbearia
-
+---
 ## Screenshots
 
 <div style="display: flex; flex-wrap: wrap; gap: 10px; justify-content: center">
-  <img src="agendamento1.png" alt="Tela de Agendamento" style="width: 45%; cursor: pointer;" onclick="this.style.width='100%'; this.style.cursor='zoom-out';" ondblclick="this.style.width='45%'; this.style.cursor='zoom-in';">
+  <img src="agendamento1.png" alt="Tela de Agendamento" style="width: 45%; cursor: pointer;" onclick="this.style.width='100%'; this.style.cursor='zoom-out';" ondblclick="this.style.width='45%'; this.style.cursor='zoom-in';">      
   <img src="cadastradoH2.png" alt="Cliente Cadastrado no Banco" style="width: 45%; cursor: pointer;" onclick="this.style.width='100%'; this.style.cursor='zoom-out';" ondblclick="this.style.width='45%'; this.style.cursor='zoom-in';">
   <img src="cadastrando4.png" alt="Cadastrando Cliente" style="width: 45%; cursor: pointer;" onclick="this.style.width='100%'; this.style.cursor='zoom-out';" ondblclick="this.style.width='45%'; this.style.cursor='zoom-in';">
   <img src="cliente cdstrado2.png" alt="Confirmação de Cadastro" style="width: 45%; cursor: pointer;" onclick="this.style.width='100%'; this.style.cursor='zoom-out';" ondblclick="this.style.width='45%'; this.style.cursor='zoom-in';">
 </div>
-
-,cadastradoH2.png,cadastrando4.png,cdstrado2.png
-
+---
 ## Visão Geral
 Este é um sistema completo de gerenciamento para barbearias que permite o cadastro de clientes e agendamento de serviços. O projeto utiliza uma arquitetura full stack moderna, com frontend Angular e backend Java Spring Boot.
 
@@ -21,7 +19,7 @@ Este é um sistema completo de gerenciamento para barbearias que permite o cadas
 - **Angular Material**: Biblioteca de componentes de UI
 - **TypeScript**: Linguagem de programação baseada em JavaScript com tipagem estática
 - **SCSS**: Pré-processador CSS para estilização avançada
-
+---
 ### Backend
 - **Java 21**: Linguagem de programação
 - **Spring Boot**: Framework para desenvolvimento de aplicações Java
@@ -29,21 +27,21 @@ Este é um sistema completo de gerenciamento para barbearias que permite o cadas
 - **Flyway**: Controle de versão para banco de dados
 - **PostgreSQL**: Sistema de gerenciamento de banco de dados relacional
 - **Maven/Gradle**: Gerenciamento de dependências e build
-
+---
 ## Funcionalidades
 - **Gestão de Clientes**:
   - Cadastro de novos clientes
   - Edição de informações
   - Listagem e busca de clientes
   - Exclusão de cadastros
-
+---
 - **Gestão de Agendamentos**:
   - Criação de novos agendamentos
   - Visualização de agendamentos por data
   - Verificação automática de disponibilidade de horários
   - Prevenção de conflitos de horários
   - Associação de clientes aos agendamentos
-
+---
 ## Desafios Superados
 Durante o desenvolvimento, enfrentamos e superamos diversos desafios:
 
@@ -56,12 +54,6 @@ Durante o desenvolvimento, enfrentamos e superamos diversos desafios:
 4. **Integração frontend-backend**: Resolvemos problemas de comunicação entre Angular e Spring Boot.
 
 5. **Estilização responsiva**: Criamos uma interface que mantém boa aparência em diferentes tamanhos de tela.
+---
 
-## Como Executar o Projeto
-
-### Pré-requisitos
-- Java 21
-- Node.js e npm
-- PostgreSQL
-- Git
 
