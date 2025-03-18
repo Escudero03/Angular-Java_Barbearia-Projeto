@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagens Interativas</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+        .image-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            justify-content: center;
+            margin: 20px;
+        }
+        .image-container img {
+            width: 45%;
+            cursor: pointer;
+            transition: transform 0.2s ease;
+        }
+        .image-container img:hover {
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body>
+    <h1>Imagens Interativas</h1>
+    <div class="image-container">
+        <img src="agendamento1.png" alt="Tela de Agendamento">
+        <img src="cadastradoH2.png" alt="Cliente Cadastrado no Banco">
+        <img src="cadastrando4.png" alt="Cadastrando Cliente">
+        <img src="cliente cdstrado2.png" alt="Confirmação de Cadastro">
+    </div>
+</body>
+</html>
