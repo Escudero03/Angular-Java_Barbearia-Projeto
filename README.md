@@ -58,8 +58,8 @@ Durante o desenvolvimento, enfrentamos e superamos diversos desafios:
 5. **Estilização responsiva**: Criamos uma interface que mantém boa aparência em diferentes tamanhos de tela.
 ---
 
-Agradeço sinceramente a oportunidade de compartilhar este projeto, que, embora simples, representa um marco significativo no meu aprendizado em desenvolvimento web. Reconheço que ainda tenho um longo caminho a percorrer e muito a aprender, mas estou comprometido em continuar me dedicando e aprimorando minhas habilidades. Este projeto foi desenvolvido com a base de referncia da Aula do Pro.Junior na Dio. (
-riando um APP Full Stack de Agendamento de Barbearia com Java e Angular ) Decola Tech 2025.  [Repositorio oririginal ](https://github.com/digitalinnovationone/barber-shop-api.git)
+Agradeço sinceramente a oportunidade de compartilhar este projeto, que, embora simples, representa um marco significativo no meu aprendizado em desenvolvimento web. Reconheço que ainda tenho um longo caminho a percorrer e muito a aprender, mas estou comprometido em continuar me dedicando e aprimorando minhas habilidades. Este projeto foi desenvolvido com a base de referencia da Aula do Pro.Junior na Dio. (
+criando um APP Full Stack de Agendamento de Barbearia com Java e Angular ) Decola Tech 2025.  [Repositorio oririginal ](https://github.com/digitalinnovationone/barber-shop-api.git)
 
 Feito por Jose Escudero (um dev em aprendizado!).
 
