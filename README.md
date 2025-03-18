@@ -8,7 +8,9 @@
   <img src="cadastrando4.png" alt="Cadastrando Cliente" style="width: 45%; cursor: pointer;" onclick="this.style.width='100%'; this.style.cursor='zoom-out';" ondblclick="this.style.width='45%'; this.style.cursor='zoom-in';">
   <img src="cliente cdstrado2.png" alt="Confirmação de Cadastro" style="width: 45%; cursor: pointer;" onclick="this.style.width='100%'; this.style.cursor='zoom-out';" ondblclick="this.style.width='45%'; this.style.cursor='zoom-in';">
 </div>
+
 ---
+
 ## Visão Geral
 Este é um sistema completo de gerenciamento para barbearias que permite o cadastro de clientes e agendamento de serviços. O projeto utiliza uma arquitetura full stack moderna, com frontend Angular e backend Java Spring Boot.
 
@@ -57,7 +59,7 @@ Durante o desenvolvimento, enfrentamos e superamos diversos desafios:
 ---
 
 Agradeço sinceramente a oportunidade de compartilhar este projeto, que, embora simples, representa um marco significativo no meu aprendizado em desenvolvimento web. Reconheço que ainda tenho um longo caminho a percorrer e muito a aprender, mas estou comprometido em continuar me dedicando e aprimorando minhas habilidades. Este projeto foi desenvolvido com a base de referncia da Aula do Pro.Junior na Dio. (
-riando um APP Full Stack de Agendamento de Barbearia com Java e Angular ) Decola Tech 2025.
+riando um APP Full Stack de Agendamento de Barbearia com Java e Angular ) Decola Tech 2025.  repositorio original [Repositorio oririginal ](https://github.com/digitalinnovationone/barber-shop-api.git)
 
 Feito por Jose Escudero (um dev em aprendizado!).
 
