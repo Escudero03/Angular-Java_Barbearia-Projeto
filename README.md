@@ -1,6 +1,15 @@
 # Sistema de Gerenciamento de Barbearia
 
-![Banner da Barbearia](./src/assets/barber-logo.jpg)
+## Screenshots
+
+<div style="display: flex; flex-wrap: wrap; gap: 10px; justify-content: center">
+  <img src="agendamento1.png" alt="Tela de Agendamento" style="width: 45%; cursor: pointer;" onclick="this.style.width='100%'; this.style.cursor='zoom-out';" ondblclick="this.style.width='45%'; this.style.cursor='zoom-in';">
+  <img src="cadastradoH2.png" alt="Cliente Cadastrado no Banco" style="width: 45%; cursor: pointer;" onclick="this.style.width='100%'; this.style.cursor='zoom-out';" ondblclick="this.style.width='45%'; this.style.cursor='zoom-in';">
+  <img src="cadastrando4.png" alt="Cadastrando Cliente" style="width: 45%; cursor: pointer;" onclick="this.style.width='100%'; this.style.cursor='zoom-out';" ondblclick="this.style.width='45%'; this.style.cursor='zoom-in';">
+  <img src="cliente cdstrado2.png" alt="Confirmação de Cadastro" style="width: 45%; cursor: pointer;" onclick="this.style.width='100%'; this.style.cursor='zoom-out';" ondblclick="this.style.width='45%'; this.style.cursor='zoom-in';">
+</div>
+
+,cadastradoH2.png,cadastrando4.png,cdstrado2.png
 
 ## Visão Geral
 Este é um sistema completo de gerenciamento para barbearias que permite o cadastro de clientes e agendamento de serviços. O projeto utiliza uma arquitetura full stack moderna, com frontend Angular e backend Java Spring Boot.
