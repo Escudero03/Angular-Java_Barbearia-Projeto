@@ -59,3 +59,7 @@ Durante o desenvolvimento, enfrentamos e superamos diversos desafios:
 Agradeço sinceramente a oportunidade de compartilhar este projeto, que, embora simples, representa um marco significativo no meu aprendizado em desenvolvimento web. Reconheço que ainda tenho um longo caminho a percorrer e muito a aprender, mas estou comprometido em continuar me dedicando e aprimorando minhas habilidades. Este projeto foi desenvolvido com a base de referncia da Aula do Pro.Junior na Dio. (
 riando um APP Full Stack de Agendamento de Barbearia com Java e Angular ) Decola Tech 2025.
 
+Feito por Jose Escudero (um dev em aprendizado!).
+
+"DEV APRENDIZADO" - Porque cada linha de código é um passo adiante!
+
